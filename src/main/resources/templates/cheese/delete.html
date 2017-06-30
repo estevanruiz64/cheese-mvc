@@ -3,7 +3,11 @@
 <head th:replace="fragments :: head"></head>
 <body>
 <div class="bigger">
-<h1 th:text="${title}">Default Title</h1>
+
+    <span id="titleStyle">
+    <h1 th:text="${title}">Default Title</h1>
+    </span>
+
 <nav th:replace="fragments :: navigation"></nav>
     <p th:unless="${cheeses} and ${cheeses.size()}">no cheese :(</p>
     <div class="smaller">
@@ -15,4 +19,7 @@
     </div>
 </div>
 </body>
+<div th:replace="fragments :: leftGif"></div>
+<div th:replace="fragments :: rightGif"></div>
+<footer th:replace="fragments :: footer"></footer>
 </html>

@@ -1,25 +1,99 @@
 body{
     font-family: sans-serif;
+    color: black;
+    font-weight: bold;
+}
+
+body {
+  width: auto;
+  height: auto;
+}
+
+body::after {
+  content: "";
+  background: url("http://madisoneasthotel.com/wp-content/uploads/sites/17/2016/08/cheese-018.png");
+  opacity: 0.66;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 div.bigger {
-    width: 50em;
-    height: 50em;
-    border: 1px solid #c3c3c3;
+    width: auto;
+    height: auto;
     text-align: center;
 }
 
+#footer{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    position: fixed;
+    top: 75%;
+    left: 30%;
+
+}
+
+#gif2{
+    width: 100%;
+    height: 100%;
+    border: 3px solid #000000;
+}
+
+#gif3{
+    width: 100%;
+    heoght: 100%;
+    border: 3px solid #000000;
+}
+
+#rightGif{
+    position: fixed;
+    top: 15%;
+    left: 70%;
+    }
+
+#leftGif{
+    position: fixed;
+    top: 15%;
+    left: 5%;
+}
+
+img{
+    width: 35%;
+    height: 35%;
+    border: 3px solid #000000;
+}
+
 div.smaller{
-width: 30em;
-align-text: left;
-border: 1px solid #c3c3c3;
-margin: 2em;
-margin-right: auto;
-margin-left: auto;
+    width: 15em;
+    align-text: left;
+    border: 1px solid #000000;
+    margin: 2em;
+    margin-right: auto;
+    margin-left: auto;
+    align-content: left;
+    background-color: white;
+}
+
+a:link, a:visited {
+    background-color: white;
+    color: black;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #000000;
+}
+
+a:hover, a:active {
+    background-color: yellow;
 }
 
 input{
-     	border: 1px solid #c3c3c3;
+     	border: 1px solid #000000;
      	padding: 5px;
 
 }
@@ -27,7 +101,11 @@ input{
 textarea {
 	width: 300px;
 	height: 120px;
-	border: 1px solid #c3c3c3;
+	border: 1px solid #000000;
 	margin: 5px;
 	padding: 5px;
+}
+
+span#titleStyle{
+    background-color: white;
 }
