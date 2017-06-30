@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 @Controller
-@RequestMapping("cheese")
+@RequestMapping(value="")
 public class CheeseController {
 
     static HashMap<String,String> cheeses = new HashMap<>();
