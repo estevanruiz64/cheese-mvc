@@ -5,7 +5,7 @@
 <div class="bigger">
     <h1 th:text="${title}">Default Title</h1>
     <nav th:replace="fragments :: navigation"></nav>
-    <p th:unless="${cheeses} and ${cheeses.size()}">no cheese :(</p>
+    <img id="noCheese" th:unless="${cheeses} and ${cheeses.size()}" src="http://orig01.deviantart.net/9500/f/2014/045/d/3/no_cheese_for_you__by_abominablyme-d76idem.png"/>
     <div class="smaller">
         <tr th:each="cheese : ${cheeses}">
             <p th:text="${cheese.key} + ' --- ' + ${cheese.value}"></p>

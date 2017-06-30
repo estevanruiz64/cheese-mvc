@@ -9,7 +9,7 @@
     </span>
 
 <nav th:replace="fragments :: navigation"></nav>
-    <p th:unless="${cheeses} and ${cheeses.size()}">no cheese :(</p>
+    <img id="noCheese" th:unless="${cheeses} and ${cheeses.size()}" src="http://orig01.deviantart.net/9500/f/2014/045/d/3/no_cheese_for_you__by_abominablyme-d76idem.png"/>
     <div class="smaller">
 <form action="delete" method="post"><span th:each="cheese : ${cheeses}">
     <input th:value="${cheese.key}" type="checkbox" name="cheeseName" style="margin: 1em;"/>
